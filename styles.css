@@ -1,5 +1,5 @@
 /* =============================
-   PhotographyX — World-Class Minimalist CSS
+   PhotographyX — Minimalist Portfolio CSS
    Clean, editorial, responsive
 ============================= */
 
@@ -92,9 +92,11 @@ nav a:hover {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+/* 🔥 FIXED IMAGE LAYOUT — NO DISTORTION */
 .gallery img {
   width: 100%;
-  height: 100%;
+  height: auto;          /* <<< CRITICAL FIX */
+  display: block;        /* Prevents inline gap */
   object-fit: cover;
   border-radius: var(--radius);
   cursor: pointer;
