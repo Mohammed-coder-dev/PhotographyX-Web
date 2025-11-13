@@ -1,4 +1,4 @@
-const totalImages = 19;
+const totalImages = 20;
 const gallery = document.getElementById('gallery');
 
 function loadImages() {
@@ -29,5 +29,6 @@ document.getElementById('closeBtn').addEventListener('click', () => {
 });
 
 loadImages();
+
 
 
